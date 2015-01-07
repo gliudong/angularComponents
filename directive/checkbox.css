@@ -1,0 +1,56 @@
+.btn-checkbox{
+    cursor:pointer;
+    width:11px;
+    height:11px;
+    display:inline-block;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+.btn-checkbox[disabled]{
+    cursor:no-drop;
+}
+
+.btn-checkbox[disabled] .btn-icon {
+    background-color:rgba(0, 0, 0, 0.26);
+    border-color:rgba(0, 0, 0, 0.26);
+}
+.btn-icon{
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    border-color:#1c5180;
+    width:11px;
+    height:11px;
+    border:1px solid;
+    border-radius:2px;
+}
+.btn-full-check .btn-icon:after{
+    transform: rotate(45deg);
+    display:table;
+    width:3px;
+    height:6px;
+    border:2px solid;
+    border-top:0;
+    border-left:0;
+    content: ' ';
+    position:absolute;
+    top:-0.5px;
+    left:3px;
+    color:#21a121;
+}
+
+.btn-part-check .btn-icon:after{
+    display:table;
+    width:9px;
+    border:2px solid;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    content: ' ';
+    position:absolute;
+    top:4.5px;
+    left:1px;
+}
